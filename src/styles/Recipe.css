@@ -1,0 +1,28 @@
+.item {
+  position: relative;
+}
+.item > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+
+  box-shadow: 1px2px 10px black;
+}
+
+.item > h3 {
+  margin: 0 0 10px 20px;
+  min-height: 50px;
+}
+
+.item > button {
+  margin: 0 0 10px 20px;
+  height: 30px;
+  width: 100px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1000px;
+  background-color: rgb(248, 17, 152);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

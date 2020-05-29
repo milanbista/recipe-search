@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,700&display=swap");
+.container {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 12px;
+  box-shadow: 2px 5px 15px rgb(102, 101, 101);
+  position: relative;
+  overflow: hidden;
+}
+
+.container:hover {
+  animation: mainHover 0.3s ease-in-out forwards;
+}
+
+@keyframes mainHover {
+  0% {
+    box-shadow: 2px 5px 15px rgb(102, 101, 101);
+  }
+  100% {
+    box-shadow: 2px 5px 40px rgb(102, 101, 101);
+  }
+}
+
+.recipe-detail {
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -20%;
+  top: -5%;
+  overflow: hidden;
+  box-shadow: 1px 2px 10px rgb(160, 158, 158);
+}
+
+.recipe-detail > ul {
+  margin-left: 300px;
+  margin-top: 200px;
+  width: 52%;
+}
+
+.recipe-detail > ul > li {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 30px;
+}
+
+.search-div {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.search-bar {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #fac30e;
+  margin-right: 10px;
+  margin-left: -40px;
+  outline: none;
+  padding-left: 20px;
+  padding-bottom: -5px;
+  background-color: transparent;
+  font-size: 1.2em;
+}
+
+.search-button {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background-color: #fac30e;
+  border-radius: 12px;
+  border-style: none;
+  font-size: 1.2em;
+
+  outline: none;
+}
+
+.recipe-list {
+  width: 60%;
+  height: 90%;
+  position: absolute;
+
+  right: 15px;
+  top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
+}
+
+.item {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 0px 22px rgb(99, 98, 98);
+  cursor: pointer;
+}
+
+.itemDetails {
+  color: rgb(61, 60, 60);
+  position: absolute;
+  z-index: 2;
+}
+
+.itemDetails > li {
+  overflow: visible;
+}
+
+.container > img {
+  position: absolute;
+  right: 0;
+  width: 200px;
+}
+
+.recipe-detail > img {
+  position: absolute;
+  top: -20px;
+  left: 550px;
+  width: 300px;
+  z-index: 1;
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,700&display=swap");
+.main-container {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 12px;
+  box-shadow: 2px 5px 15px rgb(102, 101, 101);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-container:hover {
+  animation: mainHover 0.3s ease-in-out forwards;
+}
+
+@keyframes mainHover {
+  0% {
+    box-shadow: 2px 5px 15px rgb(102, 101, 101);
+  }
+  100% {
+    box-shadow: 2px 5px 40px rgb(102, 101, 101);
+  }
+}
+
+.yellow-disk {
+  width: 800px;
+  height: 800px;
+  background-color: rgb(253, 251, 251);
+  border-radius: 50%;
+  position: absolute;
+  left: -20%;
+  top: -5%;
+  overflow: hidden;
+  box-shadow: 2px 5px 20px rgb(160, 158, 158);
+}
+
+.yellow-disk > img {
+  width: 500px;
+  position: absolute;
+  left: 250px;
+  bottom: -70px;
+  transform: rotate(-5deg);
+}
+
+.food-slogan {
+  width: 300px;
+
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: #4dc715;
+  font-family: "Muli", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.food-slogan > h1 {
+  line-height: 1.3em;
+}
+#home-text {
+  font-size: 1.5em;
+  margin-top: 0.2em;
+}
+
+.section > img {
+  width: 500px;
+  position: absolute;
+  right: -150px;
+  z-index: 3;
+}
+
+.food-search-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+}
+
+.search-btn {
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  background-color: #4dc715;
+  box-shadow: 2px 3px 10px rgb(153, 150, 150);
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border-style: none;
+  font-size: 1.5em;
+  outline: none;
+}
+
+.food-facts {
+  color: #ffc402;
+  position: relative;
+  left: 40%;
+
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+.food-facts > h2 {
+  position: absolute;
+  z-index: 2;
+}
+.sample-food {
+  position: absolute;
+  top: 250px;
+  left: -20px;
+  z-index: 0;
+}
+.sample-food > img {
+  width: 150px;
+}
