@@ -6,8 +6,8 @@ import greenLeaf from "../images/green1.png";
 import foodPlate from "../images/foodPlate.png";
 
 const RecipePage = ({ recipeName }) => {
-  const APP_ID = "67b5aebc";
-  const APP_KEY = "5be24506fe17a351f08ad8bf32f9f24b	";
+  // const APP_ID = "67b5aebc";
+  // const APP_KEY = "5be24506fe17a351f08ad8bf32f9f24b	";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -23,7 +23,7 @@ const RecipePage = ({ recipeName }) => {
     setRecipes([]);
 
     const response = await fetch(
-      `https://api.edamam.com/search?q=${food}&app_id=${APP_ID}&app_key=${APP_KEY}`
+      `https://api.edamam.com/search?q=${food}&app_id=${process.env.REACT_APP_APP_ID}&app_key=${process.env.REACT_APP_APP_KEY}`
     );
 
     const data = await response.json();
