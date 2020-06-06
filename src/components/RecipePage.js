@@ -6,9 +6,6 @@ import greenLeaf from "../images/green1.png";
 import foodPlate from "../images/foodPlate.png";
 
 const RecipePage = ({ recipeName }) => {
-  // const APP_ID = "67b5aebc";
-  // const APP_KEY = "5be24506fe17a351f08ad8bf32f9f24b	";
-
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [food, setFood] = useState("mushroom");
